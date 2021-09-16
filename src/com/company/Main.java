@@ -7,8 +7,14 @@ public class Main {
         Warrior warrior = new Warrior();
 
         Hero[] heroes = {magic, medic, warrior};
-        System.out.println(heroes[0].applySuperAbility("Enemy stasis"));
+        String[] heroesAbility = {"Enemy stasis" , "Heal", "Critical damage"};
+
+        /*System.out.println(heroes[0].applySuperAbility("Enemy stasis"));
         System.out.println(heroes[1].applySuperAbility("Heal"));
-        System.out.println(heroes[2].applySuperAbility("Critical damage"));
+        System.out.println(heroes[2].applySuperAbility("Critical damage"));*/
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println(heroes[i].applySuperAbility(heroesAbility[i]));
+        }
     }
 }
